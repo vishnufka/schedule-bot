@@ -162,7 +162,8 @@ def post_activity():
                             notes = " Notes: " + task_response[i]['notes']
                         
                         responses.setdefault(client_response['name'], [])
-                        responses[client_response['name']].append(" - " + person_name + " (" + str(task_response[i]['hours']) + "hrs): " + task_response[i]['name'] + " - " + project_response['name'] + notes)
+                        responses[client_response['name']].append(" - " + person_name + " (" + str(task_response[i]['hours']) + 
+                            "hrs): " + task_response[i]['name'] + " - " + project_response['name'] + notes)
                         
                         person_written = True
                     
